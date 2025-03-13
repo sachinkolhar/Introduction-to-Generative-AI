@@ -1,7 +1,6 @@
-# Introduction to Prompt Engineering
-
 # Map
 
+- Prompt Engineering: designing and optimizing prompts** to interact effectively with **(LLMs)**
 - How to Excel in Prompt Engineering <font color="#ffff00">UC</font>
 
 	* 1️⃣ Understand the Model: 
@@ -36,22 +35,32 @@
 		- Guides the model to adopt a <font color="#ffff00">specific role, personality, or perspective</font>
 	- Root Prompt:
 		- The<font color="#ffff00"> initial prompt</font> that starts a conversation or task with the AI.
+		- (e.g., translations, summaries, direct queries).  
 	- Combining Persona & Root Prompts
 
 - Incorporating External Knowledge into Prompts <font color="#ffff00">ICQE</font>
-	- **Explicit Information Inclusion** – <font color="#ffff00">Directly embedding relevant facts,</font> data, or context within a prompt to enhance response accuracy.
+	- **Explicit Information Inclusion** 
+		- <font color="#ffff00">Directly embedding relevant facts,</font> data, or context within a prompt to enhance response accuracy.
+		- _"According to the World Health Organization, smoking causes over 7 million deaths annually. Explain the impact of smoking on public health."_
     
-	- **Providing Context** – <font color="#ffff00">Supplying background information </font>to frame the question and improve the model's understanding.
+	- **Providing Context** 
+		- <font color="#ffff00">Supplying background information </font>to frame the question and improve the model's understanding.
+		- _"Considering the advancements in renewable energy, what are the benefits of transitioning to solar power?"_
     
-	- **Quoting Experts** – <font color="#ffff00">Incorporate quotes or statements from experts </font>to provide authoritative perspectives within the prompt.
+	- **Quoting Experts** 
+		- <font color="#ffff00">Incorporate quotes or statements from experts </font>to provide authoritative perspectives within the prompt.
+		- _"Stephen Hawking once said, 'Intelligence is the ability to adapt to change.' Discuss how this quote applies to the evolution of artificial intelligence."_
     
-	- **Embedding Data and Statistics** – <font color="#ffff00">Include relevant data, figures, or statistics</font> to ground the model's responses in factual information.
+	- **Embedding Data and Statistics** 
+		- <font color="#ffff00">Include relevant data, figures, or statistics</font> to ground the model's responses in factual information.
+		- _"With an unemployment rate of 6.3% in January 2021, how can economic policies be adjusted to improve job growth?"_
 - Multipart Prompting
 	- A **multipart prompt** requires responses to **multiple interconnected questions**.  
+	- _"What are the advantages and disadvantages of living in a big city, and how do they compare to those of living in a small town?"_
 
 ----
 
-# **Prompt Engineering: A Guide to Mastering LLM Interaction**
+# Prompt Engineering: A Guide to Mastering LLM Interaction
 
  - What is Prompt Engineering?
 	- Prompt engineering is the **art and science of designing and optimizing prompts** to interact effectively with **Large Language Models (LLMs)** like ChatGPT. 
@@ -68,24 +77,24 @@
 - How to Excel in Prompt Engineering**
 
 	- 1️⃣ Understand the Model
-		📌 **Know what the model can do:**
+		- 📌 **Know what the model can do:**
 			- Generate text, answer questions, summarize information, translate languages, etc.
-		📌 **Recognize the model's limitations:**
+		- 📌 **Recognize the model's limitations:**
 			- May lack **real-time knowledge** (e.g., current events).
 			- Can struggle with **highly technical or domain-specific jargon**.
 	- **2️⃣ Crafting Effective Prompts**
-		✅ **Clarity:**
+		- ✅ **Clarity:**
 			- Be **specific** about what you want.
 			- **Avoid vague prompts** to prevent irrelevant or misleading responses.
 			- Example: Instead of **"Explain Python"**, try **"Explain Python dictionaries with an example"**.
-		✅ **Context:**
+		- ✅ **Context:**
 			- Provide background information to **help the model generate better responses**.
 			- Example: Instead of **"Summarize this article"**, try **"Summarize this article in 3 bullet points for a 5th-grade student"**.
-		✅ **Examples:**
+		- ✅ **Examples:**
 			- Giving examples **helps guide** the model toward the desired output.
 			- Example:
 			    - Instead of **"Give me a response for a customer complaint"**, try:  
-			        **"If a customer complains about a delayed order, respond professionally and offer a discount."**
+			        - **"If a customer complains about a delayed order, respond professionally and offer a discount."**
 
 ---
 
@@ -117,6 +126,14 @@
 		- Example: **"In the style of Shakespeare, rewrite the following sentence."**
 		- Helps ensure responses are **structured as expected** (e.g., bullet points, tables, code).
 
+
+|**Component**|**Description**|**Example**|
+|---|---|---|
+|**Instruction**|Core directive that tells the model what to do.|"Summarize the following text in three bullet points."|
+|**Context**|Provides background information to frame the response.|"Considering the economic downturn, provide investment advice."|
+|**Input Data**|The specific information to be processed (text, numbers, datasets, code, etc.).|"Analyze the sentiment of this customer review: 'The product broke in two days!'"|
+|**Output Indicator**|Guides the format, tone, or style of the response.|"In the style of Shakespeare, rewrite the following sentence."|
+
 ---
 
 ## **Techniques in Prompt Engineering**
@@ -147,11 +164,15 @@
     - **"Simplify your response for a 10-year-old."**
 - Feedback loops help **align responses with user expectations over time**.
 
+
+
+|**Technique**|**Description**|**Example**|
+|---|---|---|
+|**Role-Playing**|Assigns a persona to the model to tailor responses to a specific domain.|"As a nutritionist, evaluate the following diet plan."|
+|**Iterative Refinement**|Starts broad, then refines the prompt for better accuracy and relevance.|Initial: "Explain AI." → Refined: "Explain AI in simple terms with real-world examples."|
+|**Feedback Loops**|Modifies prompts based on previous outputs to improve alignment with user expectations.|If too complex: "Simplify your response for a 10-year-old."|
+
 ---
-
-### 🚀 **Want to practice?**
-
-Try experimenting with different **prompt styles and refinement techniques** to optimize LLM interactions! 🎯
 
 
 # 🚀 Advanced Techniques in Prompt Engineering
@@ -278,7 +299,7 @@ Using advanced **prompting techniques** improves a model's ability to generalize
 ![[Pasted image 20250304142253.png]]
 
 
-# **📌  Persona and Root Prompts **
+#  Persona and Root Prompts 
 
 In **prompt engineering**, both **persona prompts** and **root prompts** play essential roles in shaping how a language model responds.
 
@@ -297,53 +318,53 @@ In **prompt engineering**, both **persona prompts** and **root prompts** play es
 
 ✅ **Guides the model to adopt a specific role, personality, or perspective.**  
 
-🔍 **Why Use Persona Prompts?**
+- 🔍 **Why Use Persona Prompts?**
 	- Helps create **more natural and role-specific** interactions.
 	- Useful for **customer support, storytelling, or expert-driven responses**.
 	- Ensures **consistency** in tone and style throughout a conversation.
 
 -  **📌 Key Characteristics**
 
-	✔ **Role Definition** – Defines the model’s persona.  
-	✔ **Tone & Style** – Influences how responses sound.  
-	✔ **Contextual Consistency** – Keeps responses aligned with the role.
+	- ✔ **Role Definition** – Defines the model’s persona.  
+	- ✔ **Tone & Style** – Influences how responses sound.  
+	- ✔ **Contextual Consistency** – Keeps responses aligned with the role.
 
 -  **📌 Examples**
 
-	💬 **General Persona Prompt:**  
-	_"As an experienced chef, can you provide a recipe for a vegetarian lasagna?"_
+	- 💬 **General Persona Prompt:**  
+	- _"As an experienced chef, can you provide a recipe for a vegetarian lasagna?"_
 	
-	💬 **Specific Persona Prompt:**  
-	_"Imagine you are a friendly and knowledgeable customer service agent. How would you respond to a complaint about a late delivery?"_
+	- 💬 **Specific Persona Prompt:**  
+	- _"Imagine you are a friendly and knowledgeable customer service agent. How would you respond to a complaint about a late delivery?"_
 	
-	💬 **Creative Persona Prompt:**  
-	_"You are a 19th-century poet describing the beauty of a sunset. Compose a short poem."_
+	- 💬 **Creative Persona Prompt:**  
+	- _"You are a 19th-century poet describing the beauty of a sunset. Compose a short poem."_
 
 ---
 
 ## **🔹 Root Prompt**
 
 ✅ **A foundational instruction that sets the model's initial behavior and task.**  
-🔍 **Why Use Root Prompts?**
+- 🔍 **Why Use Root Prompts?**
 	- Provides a **clear and direct starting point** for responses.
 	- Essential for **structured outputs like translations, explanations, or summaries**.
 	- Works well for **fact-based and objective tasks**.
 
 -  **📌 Key Characteristics**
 
-	✔ **Foundation** – Establishes the task or goal.  
-	✔ **Clarity** – Directs the model precisely.  
-	✔ **Directness** – Avoids ambiguity for accurate results.
+	- ✔ **Foundation** – Establishes the task or goal.  
+	- ✔ **Clarity** – Directs the model precisely.  
+	- ✔ **Directness** – Avoids ambiguity for accurate results.
 
 -  **📌 Examples**
-	💡 **Task-Oriented Root Prompt:**  
-	_"Translate the following sentence into French: 'The weather is nice today.'"_
+	- 💡 **Task-Oriented Root Prompt:**  
+	- _"Translate the following sentence into French: 'The weather is nice today.'"_
 	
-	💡 **Informational Root Prompt:**  
-	_"Explain the concept of photosynthesis in simple terms."_
+	- 💡 **Informational Root Prompt:**  
+	- _"Explain the concept of photosynthesis in simple terms."_
 	
-	💡 **Instruction-Based Root Prompt:**  
-	_"Summarize the key themes of the book '1984' by George Orwell."_`
+	- 💡 **Instruction-Based Root Prompt:**  
+	- _"Summarize the key themes of the book '1984' by George Orwell."_`
 
 ---
 ## Combining Persona & Root Prompts
@@ -372,92 +393,76 @@ Enhancing prompts with **external knowledge** improves the **accuracy, relevance
 
 -  **🔸 Why is it Required?**
 
-	✅ To provide the model with **accurate** and **updated** facts.  
-	✅ To **frame questions better** for more **context-aware** responses.  
-	✅ To overcome limitations where the model **lacks real-time knowledge**.
+	- ✅ To provide the model with **accurate** and **updated** facts.  
+	- ✅ To **frame questions better** for more **context-aware** responses.  
+	- ✅ To overcome limitations where the model **lacks real-time knowledge**.
+
+
+|**Technique**|**Description**|**Example**|
+|---|---|---|
+|**Explicit Information Inclusion**|Embeds key facts, data, or context directly into the prompt to guide the response.|"According to WHO, smoking causes over 7 million deaths annually. Explain the impact of smoking on public health."|
+|**Providing Context**|Supplies background information to frame the question for more relevant answers.|"Considering advancements in renewable energy, what are the benefits of transitioning to solar power?"|
+|**Quoting Experts**|Incorporates expert opinions to add credibility and perspective.|"Stephen Hawking once said, 'Intelligence is the ability to adapt to change.' Discuss how this applies to AI evolution."|
+|**Embedding Data and Statistics**|Uses real-world numbers and statistics to ensure fact-based responses.|"With an unemployment rate of 6.3% in January 2021, how can economic policies be adjusted to improve job growth?"|
 
 ---
 
 ### **🔹 1. Explicit Information Inclusion**
 
-Embed key **facts, data, or context** directly into the prompt.
+- Embed key **facts, data, or context** directly into the prompt.
 
-✔ **Example (General)**:  
-👉 _"According to the World Health Organization, smoking causes over 7 million deaths annually. Explain the impact of smoking on public health."_
+- ✔ **Example (General)**:  
+- 👉 _"According to the World Health Organization, smoking causes over 7 million deaths annually. Explain the impact of smoking on public health."_
 
-✔ **Example (Specific)**:  
-👉 _"In 2020, the global average temperature was 1.2°C above pre-industrial levels. Discuss how this rise affects climate change."_
+- ✔ **Example (Specific)**:  
+- 👉 _"In 2020, the global average temperature was 1.2°C above pre-industrial levels. Discuss how this rise affects climate change."_
 
 ---
 
 ### **🔹 2. Providing Context**
 
-Giving **background information** helps **frame the question**, leading to more relevant responses.
+- Giving **background information** helps **frame the question**, leading to more relevant responses.
 
-✔ **Example (General)**:  
-👉 _"Considering the advancements in renewable energy, what are the benefits of transitioning to solar power?"_
+- ✔ **Example (General)**:  
+- 👉 _"Considering the advancements in renewable energy, what are the benefits of transitioning to solar power?"_
 
-✔ **Example (Specific)**:  
-👉 _"Since Einstein’s general relativity predicts the bending of light by gravity, explain how this has been observed in modern astronomy."_
-
----
-
-### **🚀 Advanced Prompt Engineering: External Knowledge & AI**
-
-✅ **Want to integrate real-time data into AI-generated responses?**  
-✅ **Looking for better AI-driven research applications?**
-
-Would you like guidance on **using APIs, databases, or live sources** to provide external knowledge dynamically? 🌍📊
-
-
-### **🔹 Incorporating External Knowledge into Prompts** (Continued)
-
-Enhancing prompts with **external knowledge** ensures responses are **fact-based, authoritative, and insightful**.
+- ✔ **Example (Specific)**:  
+- 👉 _"Since Einstein’s general relativity predicts the bending of light by gravity, explain how this has been observed in modern astronomy."_
 
 ---
+
 
 ### **🔹 3. Quoting Experts**
 
-Including **expert quotes** adds **credibility** and **perspective** to the model's response.
+- Including **expert quotes** adds **credibility** and **perspective** to the model's response.
 
-✔ **Example (General)**:  
-👉 _"Stephen Hawking once said, 'Intelligence is the ability to adapt to change.' Discuss how this quote applies to the evolution of artificial intelligence."_
+- ✔ **Example (General)**:  
+- 👉 _"Stephen Hawking once said, 'Intelligence is the ability to adapt to change.' Discuss how this quote applies to the evolution of artificial intelligence."_
 
-✔ **Example (Specific)**:  
-👉 _"According to Dr. Jane Goodall, 'Chimpanzees, gorillas, and orangutans have been observed to use tools.' How does this observation support the theory of primate intelligence?"_
+- ✔ **Example (Specific)**:  
+- 👉 _"According to Dr. Jane Goodall, 'Chimpanzees, gorillas, and orangutans have been observed to use tools.' How does this observation support the theory of primate intelligence?"_
 
-✅ **Why it works?**  
-🔹 Enhances **depth & credibility** by integrating expert insights.  
-🔹 Encourages the model to **align responses with expert perspectives**.
+- ✅ **Why it works?**  
+- 🔹 Enhances **depth & credibility** by integrating expert insights.  
+- 🔹 Encourages the model to **align responses with expert perspectives**.
 
 ---
 
 ### **🔹 4. Embedding Data and Statistics**
 
-Using **real-world numbers & facts** ensures the response is **factually grounded** and **insightful**.
+- Using **real-world numbers & facts** ensures the response is **factually grounded** and **insightful**.
 
-✔ **Example (General)**:  
-👉 _"With an unemployment rate of 6.3% in January 2021, how can economic policies be adjusted to improve job growth?"_
+- ✔ **Example (General)**:  
+- 👉 _"With an unemployment rate of 6.3% in January 2021, how can economic policies be adjusted to improve job growth?"_
 
-✔ **Example (Specific)**:  
-👉 _"Given that the average life expectancy in Japan is 84 years, what factors contribute to this high longevity rate?"_
+- ✔ **Example (Specific)**:  
+- 👉 _"Given that the average life expectancy in Japan is 84 years, what factors contribute to this high longevity rate?"_
 
-✅ **Why it works?**  
-🔹 Anchors the model's response in **objective facts**.  
-🔹 Encourages the model to **analyze data-driven trends**.
+- ✅ **Why it works?**  
+- 🔹 Anchors the model's response in **objective facts**.  
+- 🔹 Encourages the model to **analyze data-driven trends**.
 
 ---
-
-### **🚀 Next Steps: AI + Live Data Integration**
-
-Would you like help on **automatically integrating real-time data (via APIs) into AI-generated responses?**
-
-For example:  
-✅ **Stock market trends** 📈  
-✅ **Weather updates** ☀️  
-✅ **Financial & health statistics** 💰🏥
-
-Let me know how you'd like to explore this further! 🚀
 
 
 # Multipart Prompting
@@ -478,16 +483,16 @@ It is useful for **exploring complex topics**, **deep analysis**, and **structur
 
 ### **🔹 Examples of Multipart Prompts**
 
-✔ **Comparative Analysis**:  
-👉 _"What are the advantages and disadvantages of living in a big city, and how do they compare to those of living in a small town?"_
+- ✔ **Comparative Analysis**:  
+- 👉 _"What are the advantages and disadvantages of living in a big city, and how do they compare to those of living in a small town?"_
 
-✔ **Ethical & Conceptual Inquiry**:  
-👉 _"Can you explain the concept of artificial intelligence and discuss the ethical implications of its development and use?"_
+- ✔ **Ethical & Conceptual Inquiry**:  
+- 👉 _"Can you explain the concept of artificial intelligence and discuss the ethical implications of its development and use?"_
 
-✔ **Step-by-Step Problem Solving**:  
-👉 _"Describe the key principles of quantum computing. Then, explain how these principles can be applied in healthcare innovation."_
+- ✔ **Step-by-Step Problem Solving**:  
+- 👉 _"Describe the key principles of quantum computing. Then, explain how these principles can be applied in healthcare innovation."_
 
-✔ **Scenario-Based Thinking**:  
-👉 _"Imagine you're designing a new financial security system. What key factors would you consider, and how would you ensure protection against cyber threats?"_
+- ✔ **Scenario-Based Thinking**:  
+- 👉 _"Imagine you're designing a new financial security system. What key factors would you consider, and how would you ensure protection against cyber threats?"_
 
 ---
