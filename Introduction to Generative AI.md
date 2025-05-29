@@ -1,4 +1,5 @@
  Inspired by the human brain, artificial neural networks function by mimicking how neurons process and transmit information. The hierarchical structure enables deep learning models to automatically learn and improve from vast amounts of data, making them highly effective in various applications such as image recognition, speech processing, and natural language understanding
+  Inspired by the human brain, artificial neural networks function by mimicking how neurons process and transmit information. The hierarchical structure enables deep learning models to automatically learn and improve from vast amounts of data, making them highly effective in various applications such as image recognition, speech processing, and natural language understanding
 # Map
 - Machine Learning
 	- branchs
