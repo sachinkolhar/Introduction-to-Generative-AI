@@ -3,6 +3,7 @@
 1. **Introduction to Generative AI**  
     1. → Foundations of AI that can create content.
     2. https://github.com/sachinkolhar/Introduction-to-Generative-AI/blob/main/Introduction%20to%20Generative%20AI.md
+    3. https://github.com/sachinkolhar/Introduction-to-Generative-AI/blob/main/2.%20Generative%20Models.md#pooling-layer-in-cnns
     
 2. **Variational Autoencoder (VAE)**  
     1. → Another type of generative model, used for image and data generation.
